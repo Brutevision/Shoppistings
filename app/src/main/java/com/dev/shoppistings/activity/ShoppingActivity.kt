@@ -1,7 +1,8 @@
-package com.dev.shoppistings
+package com.dev.shoppistings.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.dev.shoppistings.R
 
 class ShoppingActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

@@ -1,4 +1,4 @@
-package com.dev.shoppistings
+package com.dev.shoppistings.data.db.entities
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity

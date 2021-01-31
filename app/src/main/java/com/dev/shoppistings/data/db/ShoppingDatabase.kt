@@ -1,10 +1,10 @@
-package com.dev.shoppistings
+package com.dev.shoppistings.data.db
 
 import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
-import java.security.AccessControlContext
+import com.dev.shoppistings.data.db.entities.ShoppingItem
 
 @Database(
         entities = [ShoppingItem::class], // Passed in a array if multiple entities

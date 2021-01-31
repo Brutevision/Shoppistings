@@ -21,4 +21,9 @@ interface ShoppingDao {
 
     @Query("SELECT * FROM shopping_items")
     fun getAllShoppingItems (): LiveData<List<ShoppingItem>>
+
+    /**
+     * LiveData<List<ShoppingItem>>
+     *     return type of this 'LiveData' object is our ShoppingItems list
+     */
 }

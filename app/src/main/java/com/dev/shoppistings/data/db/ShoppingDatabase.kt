@@ -17,18 +17,19 @@ abstract class ShoppingDatabase : RoomDatabase() {
      * This function will make sure that we can access our DB operations from inside the DB class
      */
     companion object {
-        @Volatile
         /**
          * writes to this instance will be made visible immediately to other threads.
          * We need to do this so that only one thread is writing to the instance at a time.
          * Otherwise multiple threads will initialise instance variable and multiple instances of same DB will be created.
          * We don't want it here :)
          */
+        @Volatile
+
         private var instance: ShoppingDatabase? = null;
         private val LOCK = Any()
 
         /**
-         * Called everytime when we create an instance of out DB and it will return our instance.
+         * Called everytime when we create an instance of our DB and it will return our instance.
          * IF our instance is NULL, it will call that synchronized block{} and no other thread can set the instance while code with this block is executing.
          * So in this block{} we again check for nullability->createInstance by calling createDB fun.
          * And set the created result equals to 'it'

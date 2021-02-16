@@ -1,2 +1,2 @@
 # Shoppistings
-<img src = "https://drive.google.com/file/d/1a3AQUzTyFS4UwDn6RDBQ407Uud5fEHiK/view?usp=sharing" height="500" width="350"/> 
+<img src = "https://github.com/Brutevision/Shoppistings/blob/master/app/src/main/res/drawable/iv1.jpg" height="500" width="350"/> 
